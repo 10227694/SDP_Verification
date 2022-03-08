@@ -1,6 +1,6 @@
 # SDP_Verification
 
-This project is about the TLA+ Spec of SDP architecture and algorithm.
+This project is about the TLA+ Spec of SDP architecture and algorithm written by Dong Luming.
 
 The subdirectory  SDP_Attack_Spec  contains the specification based on the following materials:                  
 (* https://cloudsecurityalliance.org/artifacts/software-defined-perimeter-zero-trust-specification-v2/  *)                                           
