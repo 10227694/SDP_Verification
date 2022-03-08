@@ -3,7 +3,6 @@
 This project is about the TLA+ Spec of SDP architecture and algorithm.
 
 The subdirectory  SDP_Attack_Spec  contains the specification based on the following materials:                  
-(*                                                                         *)
 (* https://cloudsecurityalliance.org/artifacts/software-defined-perimeter-zero-trust-specification-v2/  *)                                           
 (* http://www.cipherdyne.org/fwknop/                                       *)
 
