@@ -1,0 +1,3447 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of Day Month 20?? (rev: 2ded5d0)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 120 and seed 1658261618731316965 with 1 worker on 6 cores with 729MB heap and 1637MB offheap memory [pid: 16196] (Windows 7 6.1 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\TlaNew\SPA_Attack.toolbox\Model_1\MC.tla
+Parsing file D:\TlaNew\SPA_Attack.toolbox\Model_1\SPA_Attack.tla
+Parsing file D:\TlaNew\toolbox\plugins\org.lamport.tlatools_1.0.0.202111260939\tla2sany\StandardModules\TLC.tla
+Parsing file D:\TlaNew\toolbox\plugins\org.lamport.tlatools_1.0.0.202111260939\tla2sany\StandardModules\FiniteSets.tla
+Parsing file D:\TlaNew\toolbox\plugins\org.lamport.tlatools_1.0.0.202111260939\tla2sany\StandardModules\Sequences.tla
+Parsing file D:\TlaNew\toolbox\plugins\org.lamport.tlatools_1.0.0.202111260939\tla2sany\StandardModules\Naturals.tla
+Parsing file D:\TlaNew\toolbox\plugins\org.lamport.tlatools_1.0.0.202111260939\tla2sany\StandardModules\Integers.tla
+Parsing file D:\TlaNew\SPA_Attack.toolbox\Model_1\Bitwise.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Integers
+Semantic processing of module TLC
+Semantic processing of module Bitwise
+Semantic processing of module SPA_Attack
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-02-24 15:38:48)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-02-24 15:38:51.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant DataAccessSafeLaw is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ CapDataMsg = {}
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Start_Auth"
+/\ DropPackets = {}
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = <<>>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = {}
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 0
+/\ sniffCount = 0
+/\ AclRuleSet = {}
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = {}
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <UsrCommitSpaAuth line 366, col 5 to line 389, col 75 of module SPA_Attack>
+/\ CapDataMsg = {}
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Auth_End"
+/\ DropPackets = {}
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = <<>>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = {}
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 0
+/\ AclRuleSet = {}
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = << [ MsgID |-> "SPA_AUTH",
+     sIP |-> 11,
+     sPort |-> 1024,
+     dIP |-> 12,
+     dPort |-> 8000,
+     ClientID |-> 1,
+     Tstamp |-> 0,
+     SvrIP |-> 58,
+     SvrPort |-> 124,
+     HMAC |-> 238,
+     Type |-> "User" ] >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <UsrConnectSvr line 407, col 5 to line 424, col 72 of module SPA_Attack>
+/\ CapDataMsg = {}
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = {}
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = << [ sIP |-> 11,
+     sPort |-> 1025,
+     dIP |-> 22,
+     dPort |-> 80,
+     Type |-> "User",
+     Flg |-> "TCP_SYN" ] >>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = {}
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 0
+/\ AclRuleSet = {}
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = << [ MsgID |-> "SPA_AUTH",
+     sIP |-> 11,
+     sPort |-> 1024,
+     dIP |-> 12,
+     dPort |-> 8000,
+     ClientID |-> 1,
+     Tstamp |-> 0,
+     SvrIP |-> 58,
+     SvrPort |-> 124,
+     HMAC |-> 238,
+     Type |-> "User" ] >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <SDPSvrProcSpaAuth line 547, col 5 to line 587, col 71 of module SPA_Attack>
+/\ CapDataMsg = {}
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = {}
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = << [ sIP |-> 11,
+     sPort |-> 1025,
+     dIP |-> 22,
+     dPort |-> 80,
+     Type |-> "User",
+     Flg |-> "TCP_SYN" ] >>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = << [ op |-> "Add",
+     Rule |->
+         [ sIP |-> 11,
+           sPort |-> 65536,
+           dIP |-> 22,
+           dPort |-> 80,
+           protocol |-> "TCP",
+           action |-> "Accept" ] ] >>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 0
+/\ AclRuleSet = {}
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <AttackerSniffDataChannel line 908, col 5 to line 925, col 28 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = {}
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = << [ sIP |-> 11,
+     sPort |-> 1025,
+     dIP |-> 22,
+     dPort |-> 80,
+     Type |-> "User",
+     Flg |-> "TCP_SYN" ] >>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = << [ op |-> "Add",
+     Rule |->
+         [ sIP |-> 11,
+           sPort |-> 65536,
+           dIP |-> 22,
+           dPort |-> 80,
+           protocol |-> "TCP",
+           action |-> "Accept" ] ] >>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = {}
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <FwProcEndPointAccess line 660, col 4 to line 690, col 63 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = <<>>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = << [ op |-> "Add",
+     Rule |->
+         [ sIP |-> 11,
+           sPort |-> 65536,
+           dIP |-> 22,
+           dPort |-> 80,
+           protocol |-> "TCP",
+           action |-> "Accept" ] ] >>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = {}
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <FwProcAclCfg line 613, col 5 to line 623, col 73 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = <<>>
+/\ SDPSvrState = "Work"
+/\ aCounter = 0
+/\ aChannel = <<>>
+/\ aTCPLinkSet = {}
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = { [ sIP |-> 11,
+    sPort |-> 65536,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ] }
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <AttackerInspectSvr line 1058, col 5 to line 1075, col 72 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = <<>>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = << [ sIP |-> 11,
+     sPort |-> 2024,
+     dIP |-> 22,
+     dPort |-> 80,
+     Type |-> "Attacker",
+     Flg |-> "TCP_SYN" ] >>
+/\ SDPSvrState = "Work"
+/\ aCounter = 1
+/\ aChannel = <<>>
+/\ aTCPLinkSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    State |-> "SYN_SENT",
+    AuthID |-> 65535 ] }
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = { [ sIP |-> 11,
+    sPort |-> 65536,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ] }
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <FwProcEndPointAccess line 660, col 4 to line 690, col 63 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = << [ sIP |-> 11,
+     sPort |-> 2024,
+     dIP |-> 22,
+     dPort |-> 80,
+     Type |-> "Attacker",
+     Flg |-> "TCP_SYN" ] >>
+/\ sTCPLinkSet = {}
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = <<>>
+/\ SDPSvrState = "Work"
+/\ aCounter = 1
+/\ aChannel = <<>>
+/\ aTCPLinkSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    State |-> "SYN_SENT",
+    AuthID |-> 65535 ] }
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ],
+  [ sIP |-> 11,
+    sPort |-> 65536,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ] }
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <ServerRcvTCPSyn line 751, col 5 to line 801, col 59 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = <<>>
+/\ sTCPLinkSet = { [ sIP |-> 22,
+    sPort |-> 80,
+    dIP |-> 11,
+    dPort |-> 2024,
+    Type |-> "Attacker",
+    State |-> "SYN_RCVD" ] }
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = <<>>
+/\ SDPSvrState = "Work"
+/\ aCounter = 1
+/\ aChannel = << [ sIP |-> 22,
+     sPort |-> 80,
+     dIP |-> 11,
+     dPort |-> 2024,
+     Type |-> "Attacker",
+     Flg |-> "TCP_SYN_ACK" ] >>
+/\ aTCPLinkSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    State |-> "SYN_SENT",
+    AuthID |-> 65535 ] }
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ],
+  [ sIP |-> 11,
+    sPort |-> 65536,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ] }
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <AttackerRcvSynAck line 1085, col 5 to line 1107, col 63 of module SPA_Attack>
+/\ CapDataMsg = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ sChannel = <<>>
+/\ sTCPLinkSet = { [ sIP |-> 22,
+    sPort |-> 80,
+    dIP |-> 11,
+    dPort |-> 2024,
+    Type |-> "Attacker",
+    State |-> "SYN_RCVD" ] }
+/\ uSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uState = "Connecting"
+/\ DropPackets = { [ sIP |-> 11,
+    sPort |-> 1025,
+    dIP |-> 22,
+    dPort |-> 80,
+    Type |-> "User",
+    Flg |-> "TCP_SYN" ] }
+/\ FwState = "Work"
+/\ ReplayCount = 0
+/\ aState = "Listen"
+/\ CapAuthMsg = {}
+/\ FwDataChannel = << [ sIP |-> 11,
+     sPort |-> 2024,
+     dIP |-> 22,
+     dPort |-> 80,
+     Type |-> "Attacker",
+     Flg |-> "TCP_ACK" ] >>
+/\ SDPSvrState = "Work"
+/\ aCounter = 1
+/\ aChannel = <<>>
+/\ aTCPLinkSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    State |-> "ESTABLISHED",
+    AuthID |-> 65535 ] }
+/\ SDPSucSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ aIP = 11
+/\ uChannel = <<>>
+/\ Account = {[Key |-> 44, ClientID |-> 1]}
+/\ DataKnowledge = {}
+/\ SpoofSession = {}
+/\ uID = 1
+/\ ReplaySession = {}
+/\ sState = "Listen"
+/\ Key = 44
+/\ uIP = 11
+/\ SpoofCount = 0
+/\ AgedRuleSet = {}
+/\ FwCtlChannel = <<>>
+/\ sSvrInfo = [IP |-> 22, Port |-> 80]
+/\ uTstamp = 1
+/\ sniffCount = 1
+/\ AclRuleSet = { [ sIP |-> 11,
+    sPort |-> 2024,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ],
+  [ sIP |-> 11,
+    sPort |-> 65536,
+    dIP |-> 22,
+    dPort |-> 80,
+    protocol |-> "TCP",
+    action |-> "Accept" ] }
+/\ uSDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ aSession = {}
+/\ uTCPLinkSet = {[sIP |-> 11, sPort |-> 1025, dIP |-> 22, dPort |-> 80, State |-> "SYN_SENT"]}
+/\ AuthKnowledge = {}
+/\ SDPSvrInfo = [IP |-> 12, Port |-> 8000]
+/\ uAuthSession = { [ MsgID |-> "SPA_AUTH",
+    sIP |-> 11,
+    sPort |-> 1024,
+    dIP |-> 12,
+    dPort |-> 8000,
+    ClientID |-> 1,
+    Tstamp |-> 0,
+    SvrIP |-> 58,
+    SvrPort |-> 124,
+    HMAC |-> 238,
+    Type |-> "User" ] }
+/\ AuthChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-02-24 15:38:52
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 1115, col 1 to line 1115, col 4 of module SPA_Attack>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 347, col 15 to line 347, col 38 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 348, col 15 to line 348, col 33 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 349, col 15 to line 349, col 35 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 351, col 15 to line 351, col 74 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 352, col 15 to line 352, col 65 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 353, col 15 to line 353, col 30 of module SPA_Attack: 2:13
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 354, col 15 to line 354, col 29 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 355, col 15 to line 355, col 31 of module SPA_Attack: 2:2
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 488, col 18 to line 488, col 35 of module SPA_Attack: 2:924
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 489, col 28 to line 489, col 83 of module SPA_Attack: 2:8618
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 489, col 29 to line 489, col 82 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 490, col 18 to line 490, col 77 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 491, col 18 to line 491, col 35 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 494, col 18 to line 494, col 35 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 495, col 18 to line 495, col 34 of module SPA_Attack: 2:68
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 597, col 15 to line 597, col 33 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 598, col 15 to line 598, col 34 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 600, col 15 to line 600, col 29 of module SPA_Attack: 2:2496
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 601, col 15 to line 601, col 30 of module SPA_Attack: 2:230
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 602, col 15 to line 602, col 30 of module SPA_Attack: 2:10
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 836, col 20 to line 836, col 37 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 837, col 20 to line 837, col 32 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 838, col 20 to line 838, col 35 of module SPA_Attack: 2:4548
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 839, col 20 to line 839, col 34 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 841, col 20 to line 841, col 34 of module SPA_Attack: 2:114
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 843, col 20 to line 843, col 42 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 844, col 20 to line 844, col 37 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 845, col 20 to line 845, col 34 of module SPA_Attack: 2:529
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 718, col 18 to line 718, col 68 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 719, col 18 to line 719, col 33 of module SPA_Attack: 2:54
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 720, col 18 to line 720, col 32 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<UsrCommitSpaAuth line 365, col 1 to line 365, col 16 of module SPA_Attack>: 1:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 366, col 8 to line 366, col 28 of module SPA_Attack: 362
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 366, col 8 to line 366, col 13 of module SPA_Attack: 360
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 367, col 8 to line 367, col 27 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 368, col 8 to line 368, col 28 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 369, col 8 to line 382, col 13 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 369, col 23 to line 382, col 13 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 369, col 30 to line 369, col 40 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 370, col 7 to line 381, col 25 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 371, col 8 to line 371, col 22 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 372, col 8 to line 372, col 52 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 373, col 8 to line 373, col 33 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 374, col 8 to line 374, col 35 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 375, col 8 to line 375, col 22 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 376, col 8 to line 376, col 25 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 377, col 20 to line 377, col 43 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 8 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 46 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 55 to line 331, col 55 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 57 to line 331, col 57 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 61 to line 331, col 61 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 377, col 28 to line 377, col 38 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 377, col 40 to line 377, col 42 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 378, col 20 to line 378, col 45 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 8 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 23 to line 331, col 39 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 32 to line 331, col 32 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 34 to line 331, col 34 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 38 to line 331, col 38 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 378, col 28 to line 378, col 40 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 378, col 42 to line 378, col 44 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 379, col 20 to line 380, col 59 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 337, col 33 to line 337, col 60 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 8 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 23 to line 331, col 39 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 32 to line 331, col 32 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 34 to line 331, col 34 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 38 to line 331, col 38 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 337, col 41 to line 337, col 54 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 337, col 57 to line 337, col 59 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 379, col 29 to line 379, col 31 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 379, col 33 to line 379, col 35 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 379, col 37 to line 379, col 43 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 379, col 45 to line 379, col 68 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 8 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 46 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 55 to line 331, col 55 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 57 to line 331, col 57 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 61 to line 331, col 61 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 379, col 53 to line 379, col 63 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 379, col 65 to line 379, col 67 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 380, col 29 to line 380, col 54 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 8 to line 331, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 331, col 23 to line 331, col 39 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 32 to line 331, col 32 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 34 to line 331, col 34 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 38 to line 331, col 38 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 380, col 37 to line 380, col 49 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 380, col 51 to line 380, col 53 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 380, col 56 to line 380, col 58 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 383, col 9 to line 383, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 383, col 25 to line 383, col 62 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 383, col 25 to line 383, col 36 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 383, col 43 to line 383, col 62 of module SPA_Attack: 2:6050
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 383, col 44 to line 383, col 61 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 384, col 9 to line 384, col 70 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 385, col 9 to line 385, col 29 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 386, col 9 to line 386, col 25 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 387, col 9 to line 387, col 31 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 388, col 9 to line 388, col 29 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 389, col 9 to line 389, col 75 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<UsrConnectSvr line 406, col 1 to line 406, col 13 of module SPA_Attack>: 15:49
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 407, col 8 to line 407, col 26 of module SPA_Attack: 408
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 407, col 8 to line 407, col 13 of module SPA_Attack: 359
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 408, col 8 to line 408, col 28 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 409, col 8 to line 409, col 24 of module SPA_Attack: 98
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 409, col 8 to line 409, col 19 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 409, col 23 to line 409, col 24 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 410, col 8 to line 410, col 23 of module SPA_Attack: 98
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 410, col 8 to line 410, col 18 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 410, col 22 to line 410, col 23 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 411, col 8 to line 417, col 23 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 411, col 23 to line 417, col 23 of module SPA_Attack: 49:786
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 412, col 9 to line 417, col 9 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 418, col 8 to line 418, col 64 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 419, col 8 to line 419, col 80 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 420, col 8 to line 420, col 28 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 421, col 8 to line 421, col 24 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 422, col 8 to line 422, col 30 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 423, col 8 to line 423, col 28 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 424, col 8 to line 424, col 72 of module SPA_Attack: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<UsrRcvSynAck line 454, col 1 to line 454, col 12 of module SPA_Attack>: 12:12
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 455, col 8 to line 455, col 28 of module SPA_Attack: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 455, col 8 to line 455, col 13 of module SPA_Attack: 358
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 456, col 8 to line 456, col 23 of module SPA_Attack: 306
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 456, col 8 to line 456, col 18 of module SPA_Attack: 294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 456, col 22 to line 456, col 23 of module SPA_Attack: 294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 457, col 8 to line 457, col 22 of module SPA_Attack: 306
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 457, col 8 to line 457, col 15 of module SPA_Attack: 294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 457, col 19 to line 457, col 22 of module SPA_Attack: 294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 458, col 8 to line 458, col 42 of module SPA_Attack: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 458, col 8 to line 458, col 25 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 459, col 8 to line 459, col 35 of module SPA_Attack: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 459, col 8 to line 459, col 26 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 434, col 25 to line 434, col 37 of module SPA_Attack: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 434, col 25 to line 434, col 29 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 434, col 33 to line 434, col 37 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 435, col 25 to line 435, col 41 of module SPA_Attack: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 435, col 25 to line 435, col 31 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 435, col 35 to line 435, col 41 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 436, col 25 to line 436, col 37 of module SPA_Attack: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 436, col 25 to line 436, col 29 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 436, col 33 to line 436, col 37 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 437, col 25 to line 437, col 41 of module SPA_Attack: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 437, col 25 to line 437, col 31 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 437, col 35 to line 437, col 41 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 434, col 12 to line 434, col 18 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 460, col 21 to line 460, col 34 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 460, col 36 to line 460, col 46 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 461, col 8 to line 468, col 29 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 461, col 23 to line 468, col 29 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 461, col 24 to line 461, col 79 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 462, col 28 to line 468, col 29 of module SPA_Attack: 12:30
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 462, col 30 to line 467, col 30 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 469, col 8 to line 469, col 28 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 470, col 8 to line 470, col 33 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 471, col 8 to line 471, col 92 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 472, col 8 to line 472, col 80 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 473, col 8 to line 473, col 28 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 474, col 8 to line 474, col 24 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 475, col 8 to line 475, col 30 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 476, col 8 to line 476, col 28 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 477, col 8 to line 477, col 63 of module SPA_Attack: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SDPSvrProcSpaAuth line 546, col 1 to line 546, col 17 of module SPA_Attack>: 36:199
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 547, col 8 to line 547, col 27 of module SPA_Attack: 557
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 547, col 8 to line 547, col 18 of module SPA_Attack: 358
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 548, col 8 to line 548, col 25 of module SPA_Attack: 557
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 548, col 8 to line 548, col 18 of module SPA_Attack: 358
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 548, col 22 to line 548, col 25 of module SPA_Attack: 358
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 549, col 8 to line 549, col 43 of module SPA_Attack: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 549, col 8 to line 549, col 30 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 550, col 8 to line 550, col 44 of module SPA_Attack: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 550, col 8 to line 550, col 28 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 550, col 32 to line 550, col 44 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 551, col 8 to line 551, col 48 of module SPA_Attack: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 551, col 8 to line 551, col 30 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 551, col 34 to line 551, col 48 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 552, col 11 to line 552, col 64 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 552, col 11 to line 552, col 57 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 512, col 5 to line 516, col 13 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 512, col 8 to line 512, col 74 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 512, col 24 to line 512, col 73 of module SPA_Attack: 106
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 512, col 17 to line 512, col 19 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 514, col 9 to line 514, col 12 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 516, col 9 to line 516, col 13 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 552, col 26 to line 552, col 42 of module SPA_Attack: 106
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 552, col 44 to line 552, col 56 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 552, col 61 to line 552, col 64 of module SPA_Attack: 199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 520, col 8 to line 520, col 39 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 521, col 8 to line 521, col 36 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 522, col 8 to line 522, col 62 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 522, col 25 to line 522, col 62 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 522, col 25 to line 522, col 37 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 522, col 44 to line 522, col 62 of module SPA_Attack: 53:24
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 522, col 45 to line 522, col 61 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 555, col 13 to line 555, col 31 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 556, col 13 to line 556, col 99 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 557, col 13 to line 557, col 29 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 558, col 13 to line 558, col 35 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 559, col 13 to line 559, col 33 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 560, col 13 to line 560, col 79 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 562, col 16 to line 562, col 61 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 562, col 16 to line 562, col 53 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 534, col 5 to line 537, col 25 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 534, col 27 to line 536, col 109 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 534, col 30 to line 534, col 54 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 536, col 30 to line 536, col 109 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 536, col 30 to line 536, col 98 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 337, col 33 to line 337, col 60 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 331, col 8 to line 331, col 62 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 331, col 23 to line 331, col 39 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 1314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 1314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 1168
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 1168
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 1168
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 1168
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 1022
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 1022
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 1022
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 1168
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 331, col 32 to line 331, col 32 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 331, col 34 to line 331, col 34 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 331, col 38 to line 331, col 38 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 337, col 41 to line 337, col 54 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 337, col 57 to line 337, col 59 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 536, col 39 to line 536, col 45 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 536, col 47 to line 536, col 58 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 536, col 60 to line 536, col 69 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 536, col 71 to line 536, col 79 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 536, col 81 to line 536, col 91 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 536, col 93 to line 536, col 97 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 536, col 102 to line 536, col 109 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 534, col 14 to line 534, col 21 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 562, col 28 to line 562, col 44 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 562, col 46 to line 562, col 52 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 562, col 57 to line 562, col 61 of module SPA_Attack: 146
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 526, col 8 to line 526, col 39 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 527, col 8 to line 527, col 35 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 528, col 8 to line 528, col 60 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 528, col 24 to line 528, col 60 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 528, col 24 to line 528, col 35 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 528, col 42 to line 528, col 60 of module SPA_Attack: 53:48
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 528, col 43 to line 528, col 59 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 565, col 18 to line 565, col 36 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 566, col 18 to line 566, col 106 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 567, col 18 to line 567, col 34 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 568, col 18 to line 568, col 40 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 569, col 18 to line 569, col 38 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 570, col 18 to line 570, col 84 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 543, col 5 to line 543, col 69 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 572, col 30 to line 577, col 52 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 572, col 31 to line 572, col 64 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 573, col 31 to line 573, col 52 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 574, col 44 to line 574, col 118 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 334, col 17 to line 334, col 29 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 331, col 8 to line 331, col 62 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 23 to line 331, col 39 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 465
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 465
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 465
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 32 to line 331, col 32 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 34 to line 331, col 34 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 38 to line 331, col 38 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 334, col 25 to line 334, col 25 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 334, col 28 to line 334, col 28 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 574, col 52 to line 574, col 74 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 574, col 76 to line 574, col 117 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 575, col 44 to line 575, col 120 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 334, col 17 to line 334, col 29 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 331, col 8 to line 331, col 62 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 11 to line 331, col 16 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 23 to line 331, col 39 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 326, col 16 to line 330, col 52 of module SPA_Attack: 744
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 326, col 19 to line 326, col 23 of module SPA_Attack: 744
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 328, col 32 to line 328, col 36 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 329, col 24 to line 330, col 52 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 329, col 24 to line 329, col 64 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 330, col 27 to line 330, col 52 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 36 to line 330, col 36 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 38 to line 330, col 38 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 40 to line 330, col 42 of module SPA_Attack: 558
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 330, col 44 to line 330, col 51 of module SPA_Attack: 651
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 32 to line 331, col 32 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 34 to line 331, col 34 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 38 to line 331, col 38 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 334, col 25 to line 334, col 25 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 334, col 28 to line 334, col 28 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 575, col 52 to line 575, col 76 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 575, col 78 to line 575, col 119 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 580, col 18 to line 580, col 72 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 580, col 35 to line 580, col 72 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 580, col 35 to line 580, col 47 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 580, col 54 to line 580, col 72 of module SPA_Attack: 93:3892
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 580, col 55 to line 580, col 71 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 581, col 18 to line 581, col 49 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 582, col 18 to line 582, col 36 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 583, col 18 to line 583, col 117 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 584, col 18 to line 584, col 34 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 585, col 18 to line 585, col 40 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 586, col 18 to line 586, col 38 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 587, col 18 to line 587, col 71 of module SPA_Attack: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FwProcAclCfg line 612, col 1 to line 612, col 12 of module SPA_Attack>: 19:104
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 613, col 8 to line 613, col 23 of module SPA_Attack: 461
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 613, col 8 to line 613, col 14 of module SPA_Attack: 357
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 614, col 8 to line 614, col 26 of module SPA_Attack: 461
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 614, col 8 to line 614, col 19 of module SPA_Attack: 357
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 614, col 23 to line 614, col 26 of module SPA_Attack: 357
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 615, col 8 to line 615, col 36 of module SPA_Attack: 208
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 615, col 8 to line 615, col 28 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 616, col 8 to line 616, col 62 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 616, col 22 to line 616, col 62 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 616, col 22 to line 616, col 31 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 616, col 38 to line 616, col 62 of module SPA_Attack: 104:4209
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 616, col 39 to line 616, col 61 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 617, col 8 to line 617, col 41 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 618, col 8 to line 618, col 26 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 619, col 8 to line 619, col 28 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 620, col 8 to line 620, col 30 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 621, col 8 to line 621, col 28 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 622, col 8 to line 622, col 53 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 623, col 8 to line 623, col 73 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FwProcEndPointAccess line 659, col 1 to line 659, col 20 of module SPA_Attack>: 98:227
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 660, col 7 to line 660, col 22 of module SPA_Attack: 583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 660, col 7 to line 660, col 13 of module SPA_Attack: 356
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 661, col 7 to line 661, col 26 of module SPA_Attack: 583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 661, col 7 to line 661, col 19 of module SPA_Attack: 356
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 661, col 23 to line 661, col 26 of module SPA_Attack: 356
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 662, col 12 to line 662, col 47 of module SPA_Attack: 445
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 662, col 12 to line 662, col 34 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 663, col 12 to line 663, col 47 of module SPA_Attack: 236
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 663, col 12 to line 663, col 34 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 665, col 11 to line 665, col 56 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 640, col 6 to line 645, col 45 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 640, col 22 to line 645, col 43 of module SPA_Attack: 69
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 640, col 25 to line 640, col 37 of module SPA_Attack: 69
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 641, col 25 to line 641, col 37 of module SPA_Attack: 69
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 642, col 25 to line 642, col 43 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 643, col 25 to line 643, col 41 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 644, col 25 to line 644, col 41 of module SPA_Attack: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 645, col 25 to line 645, col 43 of module SPA_Attack: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 640, col 15 to line 640, col 17 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 665, col 26 to line 665, col 44 of module SPA_Attack: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 665, col 46 to line 665, col 55 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 667, col 10 to line 670, col 38 of module SPA_Attack: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 672, col 14 to line 672, col 59 of module SPA_Attack: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 632, col 9 to line 636, col 48 of module SPA_Attack: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 632, col 25 to line 636, col 46 of module SPA_Attack: 60
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 632, col 28 to line 632, col 40 of module SPA_Attack: 60
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 633, col 28 to line 633, col 40 of module SPA_Attack: 60
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 634, col 28 to line 634, col 46 of module SPA_Attack: 44
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 635, col 28 to line 635, col 44 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 636, col 28 to line 636, col 46 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 632, col 18 to line 632, col 20 of module SPA_Attack: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 672, col 29 to line 672, col 47 of module SPA_Attack: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 672, col 49 to line 672, col 58 of module SPA_Attack: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 674, col 14 to line 674, col 62 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 675, col 14 to line 675, col 83 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 675, col 28 to line 675, col 83 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 675, col 28 to line 675, col 37 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 675, col 44 to line 675, col 83 of module SPA_Attack: 37:74
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 675, col 45 to line 675, col 82 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 676, col 14 to line 676, col 49 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 677, col 14 to line 677, col 39 of module SPA_Attack: 37
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 679, col 14 to line 679, col 49 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 680, col 14 to line 680, col 37 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 681, col 14 to line 681, col 33 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 682, col 14 to line 682, col 66 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 682, col 29 to line 682, col 66 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 682, col 29 to line 682, col 39 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 682, col 46 to line 682, col 66 of module SPA_Attack: 181:112
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 682, col 47 to line 682, col 65 of module SPA_Attack: 181
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 685, col 8 to line 685, col 26 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 686, col 8 to line 686, col 28 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 687, col 8 to line 687, col 30 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 688, col 8 to line 688, col 40 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 689, col 8 to line 689, col 28 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 690, col 8 to line 690, col 63 of module SPA_Attack: 227
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FwProcAclTimeOut line 696, col 1 to line 696, col 16 of module SPA_Attack>: 16:104
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 697, col 8 to line 697, col 23 of module SPA_Attack: 458
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 697, col 8 to line 697, col 14 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 698, col 8 to line 698, col 22 of module SPA_Attack: 458
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 698, col 8 to line 698, col 17 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 698, col 21 to line 698, col 22 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 699, col 29 to line 699, col 47 of module SPA_Attack: 268
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 699, col 29 to line 699, col 35 of module SPA_Attack: 164
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 699, col 39 to line 699, col 47 of module SPA_Attack: 164
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 699, col 17 to line 699, col 26 of module SPA_Attack: 122
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 700, col 8 to line 700, col 81 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 700, col 22 to line 700, col 81 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 700, col 22 to line 700, col 31 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 700, col 35 to line 700, col 81 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 700, col 36 to line 700, col 79 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 700, col 61 to line 700, col 79 of module SPA_Attack: 145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 700, col 49 to line 700, col 58 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 701, col 8 to line 701, col 85 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 701, col 23 to line 701, col 85 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 701, col 23 to line 701, col 33 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 701, col 40 to line 701, col 85 of module SPA_Attack: 104:338
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 701, col 41 to line 701, col 84 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 701, col 66 to line 701, col 84 of module SPA_Attack: 145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 701, col 54 to line 701, col 63 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 702, col 8 to line 702, col 26 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 703, col 8 to line 703, col 28 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 704, col 8 to line 704, col 30 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 705, col 8 to line 705, col 40 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 706, col 8 to line 706, col 28 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 707, col 8 to line 707, col 28 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ServerRcvTCPSyn line 750, col 1 to line 750, col 15 of module SPA_Attack>: 28:29
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 751, col 8 to line 751, col 24 of module SPA_Attack: 379
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 751, col 8 to line 751, col 13 of module SPA_Attack: 350
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 752, col 8 to line 752, col 22 of module SPA_Attack: 379
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 752, col 8 to line 752, col 15 of module SPA_Attack: 350
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 752, col 19 to line 752, col 22 of module SPA_Attack: 350
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 753, col 8 to line 753, col 38 of module SPA_Attack: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 753, col 8 to line 753, col 25 of module SPA_Attack: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 754, col 8 to line 754, col 39 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 754, col 8 to line 754, col 25 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 754, col 29 to line 754, col 39 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 755, col 8 to line 755, col 43 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 755, col 8 to line 755, col 27 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 755, col 31 to line 755, col 43 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 756, col 8 to line 756, col 33 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 757, col 12 to line 757, col 46 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 735, col 5 to line 747, col 15 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 735, col 8 to line 735, col 19 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 737, col 7 to line 737, col 10 of module SPA_Attack: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 739, col 8 to line 747, col 13 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 757, col 20 to line 757, col 33 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 757, col 35 to line 757, col 45 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 759, col 13 to line 766, col 16 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 759, col 28 to line 766, col 16 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 759, col 28 to line 759, col 38 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 759, col 45 to line 766, col 16 of module SPA_Attack: 29:260
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 760, col 14 to line 766, col 14 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 767, col 18 to line 767, col 45 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 769, col 19 to line 777, col 41 of module SPA_Attack: 25
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 780, col 19 to line 788, col 41 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 792, col 13 to line 792, col 38 of module SPA_Attack: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 793, col 13 to line 793, col 32 of module SPA_Attack: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 794, col 13 to line 794, col 32 of module SPA_Attack: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 796, col 8 to line 796, col 26 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 797, col 8 to line 797, col 28 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 798, col 8 to line 798, col 30 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 799, col 8 to line 799, col 36 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 800, col 8 to line 800, col 24 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 801, col 8 to line 801, col 59 of module SPA_Attack: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ServerRcvTcpAck line 806, col 1 to line 806, col 15 of module SPA_Attack>: 4:4
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 807, col 8 to line 807, col 24 of module SPA_Attack: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 807, col 8 to line 807, col 13 of module SPA_Attack: 349
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 808, col 8 to line 808, col 22 of module SPA_Attack: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 808, col 8 to line 808, col 15 of module SPA_Attack: 349
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 808, col 19 to line 808, col 22 of module SPA_Attack: 349
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 809, col 8 to line 809, col 38 of module SPA_Attack: 36
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 809, col 8 to line 809, col 25 of module SPA_Attack: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 434, col 25 to line 434, col 37 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 434, col 25 to line 434, col 29 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 434, col 33 to line 434, col 37 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 435, col 25 to line 435, col 41 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 435, col 25 to line 435, col 31 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 435, col 35 to line 435, col 41 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 436, col 25 to line 436, col 37 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 436, col 25 to line 436, col 29 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 436, col 33 to line 436, col 37 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 437, col 25 to line 437, col 41 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 437, col 25 to line 437, col 31 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 437, col 35 to line 437, col 41 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 434, col 12 to line 434, col 18 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 810, col 21 to line 810, col 34 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 810, col 36 to line 810, col 46 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 811, col 8 to line 811, col 66 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 811, col 8 to line 811, col 53 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 812, col 8 to line 812, col 33 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 813, col 8 to line 821, col 29 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 813, col 23 to line 821, col 29 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 813, col 24 to line 813, col 79 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 814, col 28 to line 821, col 29 of module SPA_Attack: 4:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 814, col 30 to line 820, col 30 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 822, col 8 to line 822, col 26 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 823, col 8 to line 823, col 28 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 824, col 8 to line 824, col 30 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 825, col 8 to line 825, col 36 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 826, col 8 to line 826, col 24 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 827, col 8 to line 827, col 77 of module SPA_Attack: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerSniffAuthChannel line 873, col 1 to line 873, col 24 of module SPA_Attack>: 6:8
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 874, col 8 to line 874, col 24 of module SPA_Attack: 362
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 874, col 8 to line 874, col 13 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 875, col 8 to line 875, col 38 of module SPA_Attack: 362
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 875, col 8 to line 875, col 31 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 875, col 35 to line 875, col 38 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 877, col 13 to line 877, col 79 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 877, col 35 to line 877, col 79 of module SPA_Attack: 84
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 877, col 22 to line 877, col 31 of module SPA_Attack: 92
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 876, col 17 to line 876, col 48 of module SPA_Attack: 92
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 878, col 8 to line 879, col 64 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 878, col 25 to line 879, col 64 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 878, col 25 to line 878, col 37 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 879, col 12 to line 879, col 64 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 862, col 5 to line 866, col 17 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 862, col 8 to line 862, col 17 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 866, col 5 to line 866, col 17 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 314, col 5 to line 317, col 36 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 314, col 8 to line 314, col 15 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 314, col 22 to line 314, col 23 of module SPA_Attack: 8:8
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 316, col 18 to line 316, col 24 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 317, col 12 to line 317, col 36 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 866, col 13 to line 866, col 16 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 879, col 29 to line 879, col 52 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 879, col 54 to line 879, col 63 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 880, col 8 to line 881, col 64 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 880, col 22 to line 881, col 64 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 880, col 22 to line 880, col 31 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 881, col 12 to line 881, col 64 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 862, col 5 to line 866, col 17 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 862, col 8 to line 862, col 17 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 866, col 5 to line 866, col 17 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 314, col 5 to line 317, col 36 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 314, col 8 to line 314, col 15 of module SPA_Attack: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 314, col 22 to line 314, col 23 of module SPA_Attack: 8:8
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 316, col 18 to line 316, col 24 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 317, col 12 to line 317, col 36 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 866, col 13 to line 866, col 16 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 881, col 29 to line 881, col 52 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 881, col 54 to line 881, col 63 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 882, col 8 to line 882, col 35 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 883, col 8 to line 883, col 26 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 884, col 8 to line 884, col 28 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 885, col 8 to line 885, col 24 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 886, col 8 to line 886, col 28 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 887, col 8 to line 887, col 91 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 888, col 8 to line 888, col 28 of module SPA_Attack: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerSniffDataChannel line 907, col 1 to line 907, col 24 of module SPA_Attack>: 57:58
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 908, col 8 to line 908, col 24 of module SPA_Attack: 412
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 908, col 8 to line 908, col 13 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 909, col 8 to line 909, col 40 of module SPA_Attack: 412
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 909, col 8 to line 909, col 33 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 909, col 37 to line 909, col 40 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 911, col 14 to line 913, col 84 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 911, col 37 to line 913, col 84 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 911, col 23 to line 911, col 32 of module SPA_Attack: 162
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 910, col 17 to line 910, col 50 of module SPA_Attack: 162
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 915, col 8 to line 916, col 66 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 915, col 25 to line 916, col 66 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 915, col 25 to line 915, col 37 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 916, col 12 to line 916, col 66 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 899, col 5 to line 904, col 17 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 899, col 8 to line 899, col 17 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 904, col 5 to line 904, col 17 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 314, col 5 to line 317, col 36 of module SPA_Attack: 116
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 314, col 8 to line 314, col 15 of module SPA_Attack: 116
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 314, col 22 to line 314, col 23 of module SPA_Attack: 58:58
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 316, col 18 to line 316, col 24 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 317, col 12 to line 317, col 36 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 904, col 13 to line 904, col 16 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 916, col 29 to line 916, col 54 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 916, col 56 to line 916, col 65 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 917, col 8 to line 918, col 66 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 917, col 22 to line 918, col 66 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 917, col 22 to line 917, col 31 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 918, col 12 to line 918, col 66 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 899, col 5 to line 904, col 17 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 899, col 8 to line 899, col 17 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 904, col 5 to line 904, col 17 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 314, col 5 to line 317, col 36 of module SPA_Attack: 116
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 314, col 8 to line 314, col 15 of module SPA_Attack: 116
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 314, col 22 to line 314, col 23 of module SPA_Attack: 58:58
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 316, col 18 to line 316, col 24 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 317, col 12 to line 317, col 36 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 904, col 13 to line 904, col 16 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 918, col 29 to line 918, col 54 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 918, col 56 to line 918, col 65 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 919, col 8 to line 919, col 35 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 920, col 8 to line 920, col 26 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 921, col 8 to line 921, col 28 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 922, col 8 to line 922, col 24 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 923, col 8 to line 923, col 28 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 924, col 8 to line 924, col 93 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 925, col 8 to line 925, col 28 of module SPA_Attack: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerSpoofAuth line 950, col 1 to line 950, col 17 of module SPA_Attack>: 24:54
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 951, col 7 to line 951, col 24 of module SPA_Attack: 408
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 951, col 7 to line 951, col 19 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 951, col 23 to line 951, col 24 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 952, col 7 to line 952, col 88 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 953, col 7 to line 953, col 80 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 953, col 19 to line 953, col 80 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 953, col 19 to line 953, col 26 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 953, col 33 to line 953, col 80 of module SPA_Attack: 54:4319
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 953, col 34 to line 953, col 79 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 954, col 7 to line 954, col 73 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 955, col 7 to line 955, col 25 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 956, col 7 to line 956, col 27 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 957, col 7 to line 957, col 23 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 958, col 7 to line 958, col 27 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 959, col 7 to line 959, col 104 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 960, col 7 to line 960, col 73 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerReplayAuth line 983, col 1 to line 983, col 18 of module SPA_Attack>: 24:54
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 984, col 7 to line 984, col 24 of module SPA_Attack: 408
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 984, col 7 to line 984, col 19 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 984, col 23 to line 984, col 24 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 985, col 7 to line 985, col 89 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 986, col 7 to line 986, col 81 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 986, col 19 to line 986, col 81 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 986, col 19 to line 986, col 26 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 986, col 33 to line 986, col 81 of module SPA_Attack: 54:4319
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 986, col 34 to line 986, col 80 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 987, col 7 to line 987, col 73 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 988, col 7 to line 988, col 25 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 989, col 7 to line 989, col 27 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 990, col 7 to line 990, col 23 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 991, col 7 to line 991, col 27 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 992, col 7 to line 992, col 105 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 993, col 7 to line 993, col 73 of module SPA_Attack: 54
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerBrutalAttck line 1017, col 1 to line 1017, col 19 of module SPA_Attack>: 80:104
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 7 to line 1018, col 19 of module SPA_Attack: 458
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1018, col 7 to line 1018, col 14 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1018, col 18 to line 1018, col 19 of module SPA_Attack: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1019, col 12 to line 1019, col 27 of module SPA_Attack: 300
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1019, col 12 to line 1019, col 22 of module SPA_Attack: 230
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1019, col 26 to line 1019, col 27 of module SPA_Attack: 230
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1020, col 17 to line 1020, col 32 of module SPA_Attack: 264
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1020, col 17 to line 1020, col 27 of module SPA_Attack: 230
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1020, col 31 to line 1020, col 32 of module SPA_Attack: 230
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 47 to line 1012, col 65 of module SPA_Attack: 224
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1012, col 47 to line 1012, col 54 of module SPA_Attack: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1012, col 58 to line 1012, col 65 of module SPA_Attack: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 34 to line 1012, col 44 of module SPA_Attack: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 14 to line 1012, col 21 of module SPA_Attack: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1024, col 7 to line 1024, col 30 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1025, col 7 to line 1025, col 97 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1025, col 24 to line 1025, col 97 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1025, col 31 to line 1025, col 43 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1025, col 46 to line 1025, col 96 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 1003, col 5 to line 1008, col 29 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 1025, col 77 to line 1025, col 95 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 1015, col 5 to line 1015, col 70 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1015, col 29 to line 1015, col 69 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1015, col 51 to line 1015, col 69 of module SPA_Attack: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1015, col 38 to line 1015, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1015, col 18 to line 1015, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1026, col 7 to line 1033, col 12 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1026, col 22 to line 1033, col 12 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1026, col 22 to line 1026, col 32 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 1026, col 39 to line 1033, col 12 of module SPA_Attack: 104:1352
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 1027, col 9 to line 1033, col 9 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 1027, col 23 to line 1027, col 77 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1027, col 23 to line 1027, col 73 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1003, col 5 to line 1008, col 29 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1027, col 54 to line 1027, col 72 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 1015, col 5 to line 1015, col 70 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 29 to line 1015, col 69 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 51 to line 1015, col 69 of module SPA_Attack: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 38 to line 1015, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 18 to line 1015, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 1028, col 23 to line 1028, col 79 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1028, col 23 to line 1028, col 73 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1003, col 5 to line 1008, col 29 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1028, col 54 to line 1028, col 72 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 1015, col 5 to line 1015, col 70 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 29 to line 1015, col 69 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 51 to line 1015, col 69 of module SPA_Attack: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 38 to line 1015, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 18 to line 1015, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 1029, col 23 to line 1029, col 77 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1029, col 23 to line 1029, col 73 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1003, col 5 to line 1008, col 29 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1029, col 54 to line 1029, col 72 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 1015, col 5 to line 1015, col 70 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 29 to line 1015, col 69 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 51 to line 1015, col 69 of module SPA_Attack: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 38 to line 1015, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 18 to line 1015, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 1030, col 23 to line 1030, col 79 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1030, col 23 to line 1030, col 73 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1003, col 5 to line 1008, col 29 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1030, col 54 to line 1030, col 72 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 1015, col 5 to line 1015, col 70 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 29 to line 1015, col 69 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 51 to line 1015, col 69 of module SPA_Attack: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 1015, col 38 to line 1015, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 18 to line 1015, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 1032, col 23 to line 1032, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 1032, col 23 to line 1032, col 41 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 1015, col 5 to line 1015, col 70 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 1015, col 29 to line 1015, col 69 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 51 to line 1015, col 69 of module SPA_Attack: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 1015, col 38 to line 1015, col 48 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 1015, col 18 to line 1015, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1034, col 7 to line 1034, col 25 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1035, col 7 to line 1035, col 27 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1036, col 7 to line 1036, col 23 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1037, col 7 to line 1037, col 27 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1038, col 7 to line 1038, col 107 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1039, col 7 to line 1039, col 71 of module SPA_Attack: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerInspectSvr line 1057, col 1 to line 1057, col 18 of module SPA_Attack>: 104:108
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1058, col 8 to line 1058, col 25 of module SPA_Attack: 461
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1058, col 8 to line 1058, col 20 of module SPA_Attack: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1058, col 24 to line 1058, col 25 of module SPA_Attack: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1059, col 8 to line 1059, col 31 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1060, col 8 to line 1060, col 108 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1061, col 8 to line 1068, col 12 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1061, col 23 to line 1068, col 12 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1061, col 23 to line 1061, col 33 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 1061, col 40 to line 1068, col 12 of module SPA_Attack: 108:4627
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 1062, col 9 to line 1068, col 9 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1069, col 8 to line 1069, col 74 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1070, col 8 to line 1070, col 26 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1071, col 8 to line 1071, col 28 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1072, col 8 to line 1072, col 24 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1073, col 8 to line 1073, col 28 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1074, col 8 to line 1074, col 93 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1075, col 8 to line 1075, col 72 of module SPA_Attack: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AttackerRcvSynAck line 1084, col 1 to line 1084, col 17 of module SPA_Attack>: 1:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1085, col 8 to line 1085, col 23 of module SPA_Attack: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1085, col 8 to line 1085, col 18 of module SPA_Attack: 352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1085, col 22 to line 1085, col 23 of module SPA_Attack: 352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1086, col 8 to line 1086, col 22 of module SPA_Attack: 215
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1086, col 8 to line 1086, col 15 of module SPA_Attack: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1086, col 19 to line 1086, col 22 of module SPA_Attack: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1087, col 8 to line 1087, col 42 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1087, col 8 to line 1087, col 25 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1088, col 8 to line 1088, col 39 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1088, col 8 to line 1088, col 26 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 434, col 25 to line 434, col 37 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 434, col 25 to line 434, col 29 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 434, col 33 to line 434, col 37 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 435, col 25 to line 435, col 41 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 435, col 25 to line 435, col 31 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 435, col 35 to line 435, col 41 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 436, col 25 to line 436, col 37 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 436, col 25 to line 436, col 29 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 436, col 33 to line 436, col 37 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 437, col 25 to line 437, col 41 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 437, col 25 to line 437, col 31 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 437, col 35 to line 437, col 41 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 434, col 12 to line 434, col 18 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1089, col 21 to line 1089, col 34 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1089, col 36 to line 1089, col 46 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1090, col 8 to line 1090, col 66 of module SPA_Attack: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1090, col 8 to line 1090, col 53 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1091, col 8 to line 1099, col 29 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1091, col 23 to line 1099, col 29 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1091, col 24 to line 1091, col 79 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 1092, col 28 to line 1099, col 29 of module SPA_Attack: 2:2
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 1092, col 30 to line 1098, col 30 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1100, col 8 to line 1100, col 33 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1100, col 20 to line 1100, col 33 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1101, col 8 to line 1101, col 96 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1101, col 25 to line 1101, col 96 of module SPA_Attack: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1102, col 8 to line 1102, col 26 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1103, col 8 to line 1103, col 28 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1104, col 8 to line 1104, col 24 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1105, col 8 to line 1105, col 119 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1106, col 8 to line 1106, col 28 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1107, col 8 to line 1107, col 63 of module SPA_Attack: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<SPASafeLaw line 1206, col 1 to line 1206, col 10 of module SPA_Attack>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1207, col 4 to line 1207, col 50 of module SPA_Attack: 526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1207, col 7 to line 1207, col 50 of module SPA_Attack: 526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1207, col 32 to line 1207, col 50 of module SPA_Attack: 420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1207, col 16 to line 1207, col 28 of module SPA_Attack: 526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<DataAccessSafeLaw line 1203, col 1 to line 1203, col 17 of module SPA_Attack>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1204, col 4 to line 1204, col 52 of module SPA_Attack: 526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1204, col 7 to line 1204, col 52 of module SPA_Attack: 526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1204, col 30 to line 1204, col 52 of module SPA_Attack: 459
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 1204, col 16 to line 1204, col 26 of module SPA_Attack: 526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(11) at 2022-02-24 15:38:53: 1,103 states generated (10,514 s/min), 526 distinct states found (5,014 ds/min), 175 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+1103 states generated, 526 distinct states found, 175 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 11.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 6302ms at (2022-02-24 15:38:53)
+@!@!@ENDMSG 2186 @!@!@
