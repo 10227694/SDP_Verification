@@ -1,6 +1,6 @@
 # SDP_Verification
 
-This project is about the TLA+ Spec of SDP architecture and algorithm written by Dong Luming.
+This project is about the TLA+ Spec of SDP architecture and algorithm written by Dong Luming based on the open source project fwknop.
 
 The subdirectory  SDP_Attack_Spec  contains the specification based on the following materials:                  
 (* https://cloudsecurityalliance.org/artifacts/software-defined-perimeter-zero-trust-specification-v2/  *)                                           
@@ -9,3 +9,5 @@ The subdirectory  SDP_Attack_Spec  contains the specification based on the follo
 
 The subdirectory  SDP_Attack_New_Solution_Spec  contains the specification for the improved SDP architecture and 
 algorithm which fixed the flaws related to service hidden feature.
+
+The slide  "Specifying and Verifying SDP Protocol Based Zero Trust Architecture Using TLA+.pptx" contains the key description of the reserach work.
