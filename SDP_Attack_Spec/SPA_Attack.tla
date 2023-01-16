@@ -439,7 +439,7 @@ GetMatchLink(p,LinkSet) ==  \*get match TCB (TCP control Block) for a received T
                           /\ p.dPort = x.sPort  
 
 
-EndPointBulidTcpAckPkt(p,t) == \* End point equipments might be a legistimate user or attacker
+EndPointBuildTcpAckPkt(p,t) == \* End point equipments might be a legistimate user or attacker
     [sIP      |-> p.dIP,
      sPort    |-> p.dPort,
      dIP      |-> p.sIP,
@@ -465,7 +465,7 @@ UsrRcvSynAck ==
                                }
     /\ uState' = "Connected" \* The user successfully access the target server
     /\ uChannel' = Tail(uChannel) \*Send TCP ACK packet (the last step of hand shake)  to target server
-    /\ FwDataChannel' = Append(FwDataChannel, EndPointBulidTcpAckPkt(Head(uChannel),"User"))
+    /\ FwDataChannel' = Append(FwDataChannel, EndPointBuildTcpAckPkt(Head(uChannel),"User"))
     /\ UNCHANGED <<uIP, uID, Key, uTstamp, uSDPSvrInfo, uSvrInfo, uAuthSession>>
     /\ UNCHANGED sdpsvr_vars
     /\ UNCHANGED fw_vars
@@ -977,7 +977,7 @@ AttackerReplayAuth ==
 \* can only be used to produce one brutal attack message.
 \* Variables changed: <aSession,AuthChannel,AuthKnowledge,FwDataChannel>
    
-AttckerBulidTcpSynPktByAuthMsg(m) == \* Attacker try to connect target service server as a TCP client, send SYN packet in the first step
+AttckerBuildTcpSynPktByAuthMsg(m) == \* Attacker try to connect target service server as a TCP client, send SYN packet in the first step
     [sIP      |-> aIP,
      sPort    |-> SelLocalPort(aCounter,ATTACKER_BASEPORT), \* Local port increased each attack session.
      dIP      |-> m.SvrIP,  \* Target server info directly get from auth message m ,which is encrypted. 
@@ -992,7 +992,7 @@ Get_aSession4Battck == \* choose an historic auth attack session to make a bruta
 AttackerBrutalAttck ==
    /\ \E x \in aSession: (\A y \in aTCPLinkSet: x.Tstamp # y.AuthID)    
    /\ aCounter' = aCounter + 1  \* acounter is used to build the local port value of the TCP connection, increase each time to avoid conflict among different TCP links
-   /\ LET p == AttckerBulidTcpSynPktByAuthMsg(Get_aSession4Battck) 
+   /\ LET p == AttckerBuildTcpSynPktByAuthMsg(Get_aSession4Battck) 
       IN  /\ FwDataChannel' = Append(FwDataChannel, p) \* Transport TCP SYN packet to FireWall
           /\ aTCPLinkSet' = aTCPLinkSet \cup {   \* maintain local TCP socket
                [sIP      |-> p.sIP,
@@ -1017,7 +1017,7 @@ AttackerBrutalAttck ==
 \* one knowledge can only be used to produce one service probe attack attempt.
 \* Variables changed: <aCounter,FwDataChannel,aTCPLinkSet,DataKnowledge>
   
-AttckerBulidTcpSynPktByData(p) ==
+AttckerBuildTcpSynPktByData(p) ==
     [sIP      |-> aIP,
      sPort    |-> SelLocalPort(aCounter,ATTACKER_BASEPORT),
      dIP      |-> p.dIP,
@@ -1028,7 +1028,7 @@ AttckerBulidTcpSynPktByData(p) ==
 AttackerProbeSvr ==
     /\ DataKnowledge # {}  \*pre-condition: there exists learned data knowledge that still not used to launch a service probe attack.
     /\ aCounter' = aCounter + 1 \* acounter is used to build the local port value of the TCP connection, increase each time to avoid conflict among different TCP links 
-    /\ LET p == AttckerBulidTcpSynPktByData(CHOOSE x \in DataKnowledge: TRUE)
+    /\ LET p == AttckerBuildTcpSynPktByData(CHOOSE x \in DataKnowledge: TRUE)
        IN  /\ FwDataChannel' = Append(FwDataChannel, p) \* Transport TCP SYN packet to FireWall
            /\ aTCPLinkSet' = aTCPLinkSet \cup { \* maintain local TCP socket
                   [sIP      |-> p.sIP,
@@ -1070,7 +1070,7 @@ AttackerRcvSynAck ==
                              ]   
                             }
     /\ aChannel' = Tail(aChannel)
-    /\ FwDataChannel' = Append(FwDataChannel, EndPointBulidTcpAckPkt(Head(aChannel),"Attacker")) \* Post-condition: Client send back the final ACK packet to server.
+    /\ FwDataChannel' = Append(FwDataChannel, EndPointBuildTcpAckPkt(Head(aChannel),"Attacker")) \* Post-condition: Client send back the final ACK packet to server.
     /\ UNCHANGED user_vars
     /\ UNCHANGED sdpsvr_vars
     /\ UNCHANGED fw_vars
