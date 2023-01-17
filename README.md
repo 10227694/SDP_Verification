@@ -11,3 +11,6 @@ The subdirectory  SDP_Attack_New_Solution_Spec  contains the specification for t
 algorithm which fixed the flaws related to service hidden feature.
 
 The slide  "Specifying and Verifying SDP Protocol Based Zero Trust Architecture Using TLA+.pptx" contains the key description of the reserach work.
+For details, please refer to paper :
+https://dl.acm.org/doi/10.1145/3558819.3558826
+
