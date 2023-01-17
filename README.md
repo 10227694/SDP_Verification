@@ -5,13 +5,10 @@ This project is about the TLA+ Spec of SDP architecture and algorithm written by
 The subdirectory  SDP_Attack_Spec  contains the specification based on the following materials:                  
 (* https://cloudsecurityalliance.org/artifacts/software-defined-perimeter-zero-trust-specification-v2/  *)                                           
 (* http://www.cipherdyne.org/fwknop/                                       *)
+The verification results show that current SDP protocol framework has a vulnerability in the scenario of remote access through NAT technology.
 
-![image](https://user-images.githubusercontent.com/75654010/212799801-d674b321-2b81-4582-b04d-87f930e37b23.png)
-
-
-
-The subdirectory  SDP_Attack_New_Solution_Spec  contains the specification for the improved SDP architecture and 
-algorithm which fixed the flaws related to service concealment feature.
+The subdirectory  SDP_Attack_New_Solution_Spec  contains the specification for the improved SDP architecture design
+which fixed the flaw related to service concealment feature.
 
 The slide  "Specifying and Verifying SDP Protocol Based Zero Trust Architecture Using TLA+.pptx" contains the key description of the reserach work.
 For details, please refer to paper :
